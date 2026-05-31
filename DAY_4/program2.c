@@ -1,4 +1,4 @@
-// *--> Program to find nth Fibonacci term
+// --> program to find nth fibonacci term:--
 
 #include <stdio.h>
 int main()
@@ -6,19 +6,18 @@ int main()
     int n;
     printf("Enter the number:");
     scanf("%d", &n);
-    int m=n;
 
-    printf("\n");
-
+    int num = n;
     int a = 0;
     int b = 1;
     int sum;
     for (int i = 1; i <= n; i++)
     {
         sum = a + b;
-        if (m == i)
+        if (i==num)
         {
-            printf("%d ", a);
+            printf("The %dth fibonacci term is:%d", n, a);
+            break;
         }
         a = b;
         b = sum;

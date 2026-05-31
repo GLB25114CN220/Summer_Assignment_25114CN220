@@ -1,47 +1,48 @@
-// --> Program to print Armstrong numbers in a range
+// *--> program to Print Armstrong numbers in a range:--
 
 #include <stdio.h>
 int main()
 {
-    int m;
+    int n;
     printf("Enter the number:");
-    scanf("%d", &m);
+    scanf("%d", &n);
 
-    printf("\n");
-    printf("The Armstrong numbers till the given number are:--\n");
+    printf("The Armstrong numbers till the given number are:-\n\n");
 
-    for (int n = 1; n <= m; n++)
+    for (int j = 1; j <= n; j++)
     {
-        int a = n;
-        int b = n;
-        int sum = 0;
+        int recover = j;
+        int num = j;
+        int temp = j;
+
+        // COUNTING THE NUMBER OF DIGITS:-
+
+        int num_d = 0;
+        while (temp != 0)
+        {
+            temp = temp / 10;
+            num_d++;
+        }
+        // NOW CALCULATION FOR ARMSTRONG NUMBERs:-
+
         int ld;
-        int p = 0;
-        int power;
-        while (a != 0)
+        int sum = 0;
+        int Multiply_ld ;
+        while (recover != 0)
         {
-            a = a / 10;
-            p++;
-        }
-        a = b;
-        while (a != 0)
-        {
-            ld = a % 10;
-            power = 1;
-            for (int i = 1; i <= p; i++)
+            Multiply_ld = 1;
+            ld = recover % 10;
+            for (int k = 1; k <= num_d; k++)
             {
-                power = power * ld;
+                Multiply_ld = Multiply_ld * ld;
             }
-            sum = sum + power;
-            a = a / 10;
+            sum = sum + Multiply_ld;
+
+            recover = recover / 10;
         }
-        if (sum == b)
+        if (sum == num)
         {
-            printf("%d ", b);
-        }
-        else
-        {
-            continue;
+            printf("%d ", num);
         }
     }
     return 0;

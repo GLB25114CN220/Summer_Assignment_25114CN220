@@ -1,4 +1,4 @@
-// --> Program to check whether a given number is a Armstrong number or not?
+// --> program to check Armstrong number:--
 
 #include <stdio.h>
 int main()
@@ -7,35 +7,38 @@ int main()
     printf("Enter the number:");
     scanf("%d", &n);
 
-    int b=n;
-    int a = n;
-    int ld;
-    int p = 0;
-    int sum = 0;
-    int power;
+    int check_num = n;
+    int num = n;
+    // IN ORDER TO COUNT THE NUMBER OF DIGITS:-
+    int num_d = 0;
     while (n != 0)
     {
         n = n / 10;
-        p++;
+        num_d++;
     }
-    while (a != 0)
+    // NOW CALCULATING THE CHECKING OF ARMSTRONG NUMBER:-
+
+    int ld;
+    int sum = 0;
+    int sum_ld;
+    while (num != 0)
     {
-        ld = a % 10;
-        power=1;
-        for(int i=1;i<=p;i++)
+        sum_ld = 1;
+        ld = num % 10;
+        for (int j = 1; j <= num_d; j++)
         {
-            power=power*ld;
+            sum_ld = sum_ld * ld;
         }
-        sum = sum + power;
-        a=a/10;
+        sum = sum + sum_ld;
+        num = num / 10;
     }
-    if (sum == b)
+    if (sum == check_num)
     {
-        printf("%d is an Armstrong number",b);
+        printf("%d is an Armstrong number", check_num);
     }
     else
     {
-        printf("%d is not an Armstrong number",b);
+        printf("%d is not an Armstrong number", check_num);
     }
     return 0;
 }

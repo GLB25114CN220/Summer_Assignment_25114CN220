@@ -1,4 +1,4 @@
-// Program to generate Fibonacci series:--
+// --> program to generate fibonacci series
 
 #include <stdio.h>
 int main()
@@ -6,10 +6,10 @@ int main()
     int n;
     printf("Enter the number:");
     scanf("%d", &n);
+
     printf("\n");
-
-    printf("The fibonacci series till nth term is:--\n");
-
+    printf("THE FIBONACCI SERIES IS:--\n\n");
+    
     int a = 0;
     int b = 1;
     int sum;
