@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/yashb/OneDrive/Desktop/SUMMER_ASSIGNMENT/DAY_3",
-      "program": "c:/Users/yashb/OneDrive/Desktop/SUMMER_ASSIGNMENT/DAY_3/build/Debug/outDebug",
+      "cwd": "c:/Users/yashb/OneDrive/Desktop/SUMMER_ASSIGNMENT/DAY_4",
+      "program": "c:/Users/yashb/OneDrive/Desktop/SUMMER_ASSIGNMENT/DAY_4/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
