@@ -1,4 +1,4 @@
-// --> Write a program to Remove duplicates from array : --
+// *(imp)--> Write a program to Remove duplicates from array : --
 
 #include <stdio.h>
 int main()

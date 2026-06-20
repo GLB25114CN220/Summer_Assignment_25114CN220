@@ -1,4 +1,4 @@
-// --> Write a program to Find pair with given sum:--
+// *(imp)--> Write a program to Find pair with given sum:--
 
 #include <stdio.h>
 int main()
